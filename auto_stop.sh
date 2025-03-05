@@ -7,6 +7,7 @@ sleep 10
 if tail logs/$(ls logs -rt | tail -n 1)  -n 2 | grep -q "There are 0/" ;
 then screen -S minecraft -X stuff "stop\015"
 sleep 60
-
+rm logs/$(ls logs -rt | tail -n 1)|| true
+shutdown
 fi
 fi
