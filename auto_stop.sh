@@ -1,5 +1,5 @@
 #!/bin/bash
-cd minecraft
+cd /home/ec2-user/minecraftbe/minecraft
 if screen -ls | grep -q "minecraft";
 then screen -S minecraft -X stuff "list\015"
 sleep 10
