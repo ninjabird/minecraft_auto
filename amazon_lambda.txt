@@ -36,7 +36,7 @@ def lambda_handler(event, context):
     "var copyTarget = document.getElementById(\"target\").textContent;" \
     #"copyTarget.select();document.execCommand(\"Copy\");" \
     "navigator.clipboard.writeText(copyTarget);"\
-    "alert('copied');}</script>" \
+    "alert('ip copied');}</script>" \
 
     +"<button type= 'button' id = 'target' onclick='copyToClipboard()' >" + public_ip + "</button>" +\
     "</body></html>"
